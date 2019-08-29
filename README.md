@@ -35,14 +35,22 @@ External-to-Service communications: this is covered by services.
 
 
 实现方式：
-- Since Kubernetes v1.0 you have been able to use the userspace proxy mode.
--  Kubernetes v1.1 added iptables mode proxying, and in Kubernetes v1.2 the iptables mode for kube-proxy became the default. 
-- Kubernetes v1.8 added ipvs proxy mode.
+
+### userspace proxy mode
+
+Since Kubernetes v1.0 you have been able to use the userspace proxy mode.
 
 ![user space proxy mode](https://d33wubrfki0l68.cloudfront.net/e351b830334b8622a700a8da6568cb081c464a9b/13020/images/docs/services-userspace-overview.svg)
 
+### iptables proxy mode
+
+Kubernetes v1.1 added iptables mode proxying, and in Kubernetes v1.2 the iptables mode for kube-proxy became the default. 
 
 ![iptables proxy mode](https://d33wubrfki0l68.cloudfront.net/27b2978647a8d7bdc2a96b213f0c0d3242ef9ce0/e8c9b/images/docs/services-iptables-overview.svg)
+
+### IPVS proxy mode
+
+Kubernetes v1.8 added ipvs proxy mode.
 
 ![IPVS proxy mode](https://d33wubrfki0l68.cloudfront.net/2d3d2b521cf7f9ff83238218dac1c019c270b1ed/9ac5c/images/docs/services-ipvs-overview.svg)
 
